@@ -53,4 +53,8 @@ public class Ejercice {
         }
         return sum;
     }
+
+    public int calculatePentagonalNumber(int num) {
+        return (num*(3*num -1))/2;
+    }
 }

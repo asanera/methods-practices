@@ -27,6 +27,12 @@ public class Main {
         resutl = ejercice.sumDigit(25);
         System.out.println(resutl);
 
+        //Write a Java method to display the first 50 pentagonal numbers
+        for (int num = 1; num <=50; num++){
+            System.out.print(ejercice.calculatePentagonalNumber(num) + (num % 10 == 0 ? "\n" : " "));
+        }
+
+
     }
 
 
