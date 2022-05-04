@@ -48,8 +48,8 @@ public class Ejercice {
         }
         char[] chars = String.valueOf(num).toCharArray();
         int sum = 0;
-        for (int i = 0; i < chars.length; i++) {
-            sum += Character.getNumericValue(chars[i]);
+        for (char aChar : chars) {
+            sum += Character.getNumericValue(aChar);
         }
         return sum;
     }
