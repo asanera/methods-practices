@@ -1,6 +1,5 @@
 package com.asanera;
 
-import org.jetbrains.annotations.NotNull;
 
 import javax.naming.OperationNotSupportedException;
 import java.util.Scanner;
@@ -8,17 +7,17 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws OperationNotSupportedException {
-	    Ejercice ejercice = new Ejercice();
+        Ejercice ejercice = new Ejercice();
 
         //Write a Java method to find the smallest number among three numbers
-         int result = ejercice.findSmallNumber(25,37,29);
-         System.out.println(result);
+        int result = ejercice.findSmallNumber(25, 37, 29);
+        System.out.println(result);
 
         //Write a Java method to find the smallest number among three numbers
-         result = ejercice.findEvergeNumber(25,45,65);
-         System.out.println(result);
+        result = ejercice.findEvergeNumber(25, 45, 65);
+        System.out.println(result);
 
-         // Write a Java method to count all vowels in a string.
+        // Write a Java method to count all vowels in a string.
         result = ejercice.countVowels("e");
         System.out.println(result);
 
@@ -31,30 +30,29 @@ public class Main {
         System.out.println(result);
 
         //Write a Java method to display the first 50 pentagonal numbers
-        for (int num = 1; num <=50; num++){
+        for (int num = 1; num <= 50; num++) {
             System.out.print(ejercice.calculatePentagonalNumber(num) + (num % 10 == 0 ? "\n" : " "));
         }
 
         //Write a Java method to compute the future investment value at a given interest rate for a specified number of years.
-        int amount = prontValue("Input the investment amount");
-        final int rate = prontValue("Input the rate of interest");
-        int year = prontValue("Input number of years");
+        double amount = prontValue("Input the investment amount");
+        final double rate = prontValue("Input the rate of interest");
+        double year = prontValue("Input number of years");
 
 
-        for (int i = 1;year > 0; year--, i++) {
+        for (int i = 1; year > 0; year--, i++) {
             amount = ejercice.calculateAnualInterest(amount, rate);
             System.out.println(i + " " + amount);
         }
 
 
-
     }
 
-    @NotNull
-    private static int prontValue(String text) {
+
+    private static double prontValue(String text) {
         Scanner sc = new Scanner(System.in);
-        System.out.print(text+ " ");
-        final int value = sc.nextInt();
+        System.out.print(text + " ");
+        final double value = sc.nextDouble();
         return value;
     }
 
