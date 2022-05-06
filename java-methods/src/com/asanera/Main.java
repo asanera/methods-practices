@@ -1,6 +1,9 @@
 package com.asanera;
 
+import org.jetbrains.annotations.NotNull;
+
 import javax.naming.OperationNotSupportedException;
+import java.util.Scanner;
 
 public class Main {
 
@@ -33,9 +36,26 @@ public class Main {
         }
 
         //Write a Java method to compute the future investment value at a given interest rate for a specified number of years.
+        int amount = prontValue("Input the investment amount");
+        final int rate = prontValue("Input the rate of interest");
+        int year = prontValue("Input number of years");
+
+
+        for (int i = 1;year > 0; year--, i++) {
+            amount = ejercice.calculateAnualInterest(amount, rate);
+            System.out.println(i + " " + amount);
+        }
 
 
 
+    }
+
+    @NotNull
+    private static int prontValue(String text) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(text+ " ");
+        final int value = sc.nextInt();
+        return value;
     }
 
 

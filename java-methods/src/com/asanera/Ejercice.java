@@ -57,4 +57,8 @@ public class Ejercice {
     public int calculatePentagonalNumber(int num) {
         return (num*(3*num -1))/2;
     }
+
+    public int calculateAnualInterest(int amount, int rate) {
+        return amount * (rate/100);
+    }
 }
