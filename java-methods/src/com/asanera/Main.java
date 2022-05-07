@@ -32,7 +32,7 @@ public class Main {
             System.out.print(ejercice.calculatePentagonalNumber(num) + (num % 10 == 0 ? "\n" : " "));
         }
 
-        //Write a Java method to compute the future investment value at a given interest rate for a specified number of years.
+
 
 
 
