@@ -54,6 +54,7 @@ public class Main {
         System.out.print(text + " ");
         final double value = sc.nextDouble();
         return value;
+
     }
 
 
