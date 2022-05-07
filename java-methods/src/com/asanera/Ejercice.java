@@ -2,7 +2,6 @@ package com.asanera;
 
 import javax.naming.OperationNotSupportedException;
 import java.util.*;
-import java.util.stream.IntStream;
 
 public class Ejercice {
 
@@ -56,5 +55,9 @@ public class Ejercice {
 
     public int calculatePentagonalNumber(int num) {
         return (num*(3*num -1))/2;
+    }
+
+    public double calculateAnualInterest(double amount, double rate) {
+        return amount *(1 + (rate/100));
     }
 }
