@@ -33,8 +33,7 @@ public class Main {
         }
 
         //Write a Java method to print characters between two characters (i.e. A to P )
-
-
+        final char [] characterInterval = new char[]{'(', 'z'};
 
     }
 
