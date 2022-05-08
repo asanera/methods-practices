@@ -60,4 +60,14 @@ public class Ejercice {
     public double calculateAnualInterest(double amount, double rate) {
         return amount *(1 + (rate/100));
     }
+
+    public String charactersBetweenTwoCharacters(char characterInit, char characterFinish) {
+        StringBuilder interval = new StringBuilder();
+        char character;
+        for (int i = characterInit, j = 1; i <= characterFinish ; i++, j++) {
+            character = (char) i;
+            interval.append(j % 20 == 0 ? "\n"+ character : character).append(" ");
+        }
+        return interval.toString();
+    }
 }
