@@ -36,6 +36,12 @@ public class Main {
         System.out.println(ejercice.charactersBetweenTwoCharacters('(','z'));
 
         //Write a Java method to check whether a year (integer) entered by the user is a leap year or not
+        int year = 2017;
+        System.out.println(ejercice.isLeapYear(year));
+        year = 2018;
+        System.out.println(ejercice.isLeapYear(year));
+        year = 2002;
+        System.out.println(ejercice.isLeapYear(year));
 
     }
 
