@@ -35,6 +35,8 @@ public class Main {
         //Write a Java method to print characters between two characters (i.e. A to P )
         System.out.println(ejercice.charactersBetweenTwoCharacters('(','z'));
 
+        //Write a Java method to check whether a year (integer) entered by the user is a leap year or not
+
     }
 
 
