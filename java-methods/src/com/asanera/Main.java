@@ -38,7 +38,7 @@ public class Main {
         //Write a Java method to check whether a year (integer) entered by the user is a leap year or not
         int year = 2017;
         System.out.println(ejercice.isLeapYear(year));
-        year = 2018;
+        year = 2020;
         System.out.println(ejercice.isLeapYear(year));
         year = 2002;
         System.out.println(ejercice.isLeapYear(year));
